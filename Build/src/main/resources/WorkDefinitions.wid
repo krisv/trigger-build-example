@@ -1,0 +1,28 @@
+import org.drools.core.process.core.datatype.impl.type.StringDataType;
+import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
+
+[
+
+  [
+    "name" : "Trigger Build",
+    "parameters" : [
+      "BuildId" : new StringDataType()
+    ],
+    "results" : [
+      "Outcome" : new StringDataType(),
+      "ResultUrl" : new StringDataType()
+    ],
+    "displayName" : "Build",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+
+  [
+    "name" : "Deploy",
+    "parameters" : [
+      "BuildId" : new StringDataType()
+    ],
+    "displayName" : "Deploy",
+    "icon" : "defaultemailicon.gif"
+  ]
+
+]
